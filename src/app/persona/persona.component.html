@@ -1,3 +1,6 @@
 <h2>Dettagli persona</h2>
-<div><span>id: </span>{{ p.nome }}</div>
-<div><span>name: </span>{{ p.cognome }}</div>
+<label for="nome">nome:</label>
+<input id="nome" [(ngModel)]="p.nome" placeholder="nome..." />
+<br />
+<label for="cognome">cognome:</label>
+<input id="cognome" [(ngModel)]="p.cognome" placeholder="cognome..." />
